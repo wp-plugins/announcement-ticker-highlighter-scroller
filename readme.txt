@@ -5,8 +5,10 @@ Plugin URI: http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highligh
 Author URI: http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/
 Tags: announcement, widget, ticker, highlighter, scroller, message
 Requires at least: 3.0
-Tested up to: 3.4.1
-Stable tag: 9.0
+Tested up to: 3.5
+Stable tag: 9.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
 This plug-in will display the announcement with highlighter scroller. It gradually reveals each message into view from bottom to top.
 
@@ -35,11 +37,6 @@ We can add more announcement, this will display 1 by 1 with highlighter scroller
 **Two way to use.**  
 1. Drag and drop the widget to your sidebar.  
 2. Copy and paste the given code to the desired location. 
-
-**Version 3.0** 	
-New javascript support to support both IE and mizila.	
-Now Multilanguage support enabled, so you can add all languages into announcement, 
-to post announcement in other language, simply copy and past the other language content in announcement text area.
 
 Tags: Announcement, side bar, widget,ticker, highlighter, scroller, flash news, message
 
@@ -89,6 +86,9 @@ http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller
 
 == Upgrade Notice == 
 
+9.1
+Tested upto 3.5
+
 9.0
 New demo link, www.gopiplus.com
 
@@ -119,6 +119,9 @@ Changes in JS.
 First version.
 
 == Changelog ==
+
+9.1
+Tested upto 3.5
 
 9.0
 New demo link, www.gopiplus.com

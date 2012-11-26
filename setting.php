@@ -106,6 +106,6 @@ if (@$_POST['g_aths_submit'])
   </div>
   </form>
   <br>
-	Note: Arrange the width & height to match the location(sidebar).<br>
+	Note: Arrange the width & height to match the location (sidebar).<br>
 	Check official website for more information <a target="_blank" href='http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/'>click here</a>  <br>
 </div>
