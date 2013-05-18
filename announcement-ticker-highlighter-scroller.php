@@ -4,7 +4,7 @@
 Plugin Name: Announcement ticker highlighter scroller
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/
 Description: This plug-in will display the announcement with highlighter scroller. It gradually reveals each message into view from bottom to top.
-Version: 9.1
+Version: 10.0
 Author: Gopi R
 Author URI: http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/
 Donate link: http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/

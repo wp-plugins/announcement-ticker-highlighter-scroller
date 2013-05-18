@@ -4,9 +4,9 @@ Donate link: http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlig
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/
 Author URI: http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/
 Tags: announcement, widget, ticker, highlighter, scroller, message
-Requires at least: 3.0
-Tested up to: 3.5
-Stable tag: 9.1
+Requires at least: 3.4
+Tested up to: 3.6
+Stable tag: 10.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -21,9 +21,7 @@ Check official website for live demo [http://www.gopiplus.com/work/2010/07/18/an
 *   [More Info](http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/)  		
 *   [Comments/Suggestion](http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/)		
 
-This plug-in will display the announcement with highlighter scroller.
-It gradually reveals each message into view from bottom to top.
-We can add more announcement, this will display 1 by 1 with highlighter scroller.
+Announcement ticker highlighter scroller wordpress plugin create an announcement scroller in sidebar. It gradually reveals each message into view from bottom to top.
  
 **Feature :**  
 
@@ -86,6 +84,9 @@ http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller
 
 == Upgrade Notice == 
 
+10.0
+Tested upto 3.6
+
 9.1
 Tested upto 3.5
 
@@ -119,6 +120,9 @@ Changes in JS.
 First version.
 
 == Changelog ==
+
+10.0
+Tested upto 3.6
 
 9.1
 Tested upto 3.5
