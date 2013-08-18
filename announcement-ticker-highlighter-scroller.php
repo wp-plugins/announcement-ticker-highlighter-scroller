@@ -4,7 +4,7 @@
 Plugin Name: Announcement ticker highlighter scroller
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/
 Description: This plug-in will display the announcement with highlighter scroller. It gradually reveals each message into view from bottom to top.
-Version: 10.0
+Version: 10.1
 Author: Gopi R
 Author URI: http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/
 Donate link: http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/
@@ -14,6 +14,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 global $wpdb, $wp_version;
 define("WP_g_aths_TABLE", $wpdb->prefix . "g_aths_plugin");
+define("WP_g_aths_UNIQUE_NAME", "announcement-ticker");
+define("WP_g_aths_TITLE", "Announcement ticker highlighter scroller");
+define('WP_g_aths_FAV', 'http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/');
+define('WP_g_aths_LINK', 'Check official website for more information <a target="_blank" href="'.WP_g_aths_FAV.'">click here</a>');
 
 function g_aths_announcement()
 {
@@ -50,7 +54,7 @@ function g_aths_announcement()
 	g_aths_startcontent();
 	//if (document.all || document.getElementById)
 	//window.onload=g_aths_startcontent
-	</script>
+</script>
 <?php
 }
 
@@ -83,7 +87,7 @@ function g_aths_activation()
 			  PRIMARY KEY  (`g_aths_id`) )
 			");
 		$sSql = "INSERT INTO `". WP_g_aths_TABLE . "` (`g_aths_text`, `g_aths_order`, `g_aths_status`, `g_aths_date`)"; 
-		$sSql = $sSql . "VALUES ('This is sample text for announcement ticker highlighter scroller - This is sample text for announcement ticker highlighter scroller.', '1', 'YES', '0000-00-00 00:00:00');";
+		$sSql = $sSql . "VALUES ('This is sample text for announcement ticker highlighter scroller by gopiplus.com', '1', 'YES', '0000-00-00 00:00:00');";
 		$wpdb->query($sSql);
 	}
 	add_option('g_aths_title', "Announcement");
@@ -100,162 +104,28 @@ function g_aths_activation()
 function g_aths_admin_options() 
 {
 	global $wpdb;
-	?>
-
-<div class="wrap">
-  <?php
-    @$mainurl = get_option('siteurl')."/wp-admin/options-general.php?page=announcement-ticker-highlighter-scroller/announcement-ticker-highlighter-scroller.php";
-    @$DID=@$_GET["DID"];
-    @$AC=@$_GET["AC"];
-    @$submittext = "Insert Message";
-
-	if($AC <> "DEL" and trim(@$_POST['g_aths_text']) <>"")
-    {
-			if($_POST['g_aths_id'] == "" )
-			{
-					$sql = "insert into ".WP_g_aths_TABLE.""
-					. " set `g_aths_text` = '" . mysql_real_escape_string(trim($_POST['g_aths_text']))
-					. "', `g_aths_order` = '" . $_POST['g_aths_order']
-					. "', `g_aths_status` = '" . $_POST['g_aths_status']
-					. "'";	
-			}
-			else
-			{
-					$sql = "update ".WP_g_aths_TABLE.""
-					. " set `g_aths_text` = '" . mysql_real_escape_string(trim($_POST['g_aths_text']))
-					. "', `g_aths_order` = '" . $_POST['g_aths_order']
-					. "', `g_aths_status` = '" . $_POST['g_aths_status']
-					. "' where `g_aths_id` = '" . $_POST['g_aths_id'] 
-					. "'";	
-			}
-			$wpdb->get_results($sql);
-    }
-    
-    if($AC=="DEL" && $DID > 0)
-    {
-        $wpdb->get_results("delete from ".WP_g_aths_TABLE." where g_aths_id=".$DID);
-    }
-    
-    if($DID<>"" and $AC <> "DEL")
-    {
-        //select query
-        $data = $wpdb->get_results("select * from ".WP_g_aths_TABLE." where g_aths_id=$DID limit 1");
-    
-        //bad feedback
-        if ( empty($data) ) 
-        {
-           echo "<div id='message' class='error'><p>No data available! use below form to create!</p></div>";
-            return;
-        }
-        
-        $data = $data[0];
-        
-        //encode strings
-        if ( !empty($data) ) $g_aths_id_x = htmlspecialchars(stripslashes($data->g_aths_id)); 
-        if ( !empty($data) ) $g_aths_text_x = htmlspecialchars(stripslashes($data->g_aths_text));
-        if ( !empty($data) ) $g_aths_status_x = htmlspecialchars(stripslashes($data->g_aths_status));
-		if ( !empty($data) ) $g_aths_order_x = htmlspecialchars(stripslashes($data->g_aths_order));
-        
-        $submittext = "Update Message";
-    }
-    ?>
-  <h2>Announcement ticker highlighter scroller</h2>
-  <div align="left" style="padding-top:5px;padding-bottom:5px;float:"> 
-  <script language="JavaScript" src="<?php echo get_option('siteurl'); ?>/wp-content/plugins/announcement-ticker-highlighter-scroller/setting.js"></script>
-  <script language="JavaScript" src="<?php echo get_option('siteurl'); ?>/wp-content/plugins/announcement-ticker-highlighter-scroller/noenter.js"></script>
-  <form name="form_aths" method="post" action="<?php echo @$mainurl; ?>" onsubmit="return aths_submit()"  >
-    <table width="100%">
-      <tr>
-        <td colspan="3" align="left" valign="middle">Enter the message:</td>
-      </tr>
-      <tr>
-        <td colspan="2" align="left" valign="middle"><textarea name="g_aths_text" cols="70" rows="8" id="g_aths_text"><?php echo @$g_aths_text_x; ?></textarea></td>
-        <td width="40%" rowspan="3" align="center" valign="top"></td>
-      </tr>
-      <tr>
-        <td align="left" valign="middle">Display Status:</td>
-        <td align="left" valign="middle">Display Order:</td>
-      </tr>
-      <tr>
-        <td width="20%" align="left" valign="middle"><select name="g_aths_status" id="g_aths_status">
-            <option value="">Select</option>
-            <option value='YES' <?php if(@$g_aths_status_x=='YES') { echo 'selected' ; } ?>>Yes</option>
-            <option value='NO' <?php if(@$g_aths_status_x=='NO') { echo 'selected' ; } ?>>No</option>
-          </select>        </td>
-        <td width="40%" align="left" valign="middle"><input name="g_aths_order" type="text" id="g_aths_order" size="10" value="<?php echo @$g_aths_order_x; ?>" maxlength="3" /></td>
-      </tr>
-      <tr>
-        <td height="35" colspan="3" align="left" valign="bottom"><input name="publish" lang="publish" class="button-primary" value="<?php echo @$submittext?>" type="submit" />
-          <input name="publish" lang="publish" class="button-primary" onclick="_g_aths_redirect()" value="Cancel" type="button" /> 
-          <input name="Help" lang="publish" class="button-primary" onclick="window.open('http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/');" value="Help" type="button" />
-		  (Enter key not allow, use &lt;br&gt; tag to break) </td>
-      </tr>
-      <input name="g_aths_id" id="g_aths_id" type="hidden" value="<?php echo @$g_aths_id_x; ?>">
-    </table>
-  </form>
-  <div class="tool-box">
-    <?php
-	$data = $wpdb->get_results("select * from ".WP_g_aths_TABLE." order by g_aths_order");
-	if ( empty($data) ) 
-	{ 
-		echo "<div id='message' class='error'>No data available! use below form to create!</div>";
-		return;
+	$current_page = isset($_GET['ac']) ? $_GET['ac'] : '';
+	switch($current_page)
+	{
+		case 'edit':
+			include('pages/content-management-edit.php');
+			break;
+		case 'add':
+			include('pages/content-management-add.php');
+			break;
+		case 'set':
+			include('pages/widget-setting.php');
+			break;
+		default:
+			include('pages/content-management-show.php');
+			break;
 	}
-	?>
-    <form name="frm_hsa" method="post">
-      <table width="100%" class="widefat" id="straymanage">
-        <thead>
-          <tr>
-            <th width="4%" align="left" scope="col">ID
-              </td>
-            <th width="68%" align="left" scope="col">Message
-              </td>
-            <th width="8%" align="left" scope="col"> Order
-              </td>
-            <th width="7%" align="left" scope="col">Display
-              </td>
-            <th width="13%" align="left" scope="col">Action
-              </td>
-          </tr>
-        </thead>
-        <?php 
-        $i = 0;
-        foreach ( $data as $data ) { 
-		if($data->g_aths_status=='YES') { @$displayisthere="True"; }
-        ?>
-        <tbody>
-          <tr class="<?php if ($i&1) { echo'alternate'; } else { echo ''; }?>">
-            <td align="left" valign="middle"><?php echo(stripslashes($data->g_aths_id)); ?></td>
-            <td align="left" valign="middle"><?php echo(stripslashes($data->g_aths_text)); ?></td>
-            <td align="left" valign="middle"><?php echo(stripslashes($data->g_aths_order)); ?></td>
-            <td align="left" valign="middle"><?php echo(stripslashes($data->g_aths_status)); ?></td>
-            <td align="left" valign="middle"><a href="options-general.php?page=announcement-ticker-highlighter-scroller/announcement-ticker-highlighter-scroller.php&DID=<?php echo($data->g_aths_id); ?>">Edit</a> &nbsp; <a onClick="javascript:_hsadelete('<?php echo($data->g_aths_id); ?>')" href="javascript:void(0);">Delete</a> </td>
-          </tr>
-        </tbody>
-        <?php $i = $i+1; } ?>
-        <?php if($displayisthere<>"True") { ?>
-        <tr>
-          <td colspan="5" align="center" style="color:#FF0000" valign="middle">No Announcement available with display status 'Yes'!' </td>
-        </tr>
-        <?php } ?>
-      </table>
-    </form>
-    <div style="padding-top:10px;padding-bottom:10px;float:right;"> 
-	<input name="text_management" lang="text_management" class="button-primary" onClick="location.href='options-general.php?page=announcement-ticker-highlighter-scroller/announcement-ticker-highlighter-scroller.php'" value="Go to - Content Management" type="button" />
-  	<input name="setting_management" lang="setting_management" class="button-primary" onClick="location.href='options-general.php?page=announcement-ticker-highlighter-scroller/setting.php'" value="Go to - Setting Page" type="button" />
-	</div>
-	<br />Check official website for more information <a target="_blank" href='http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/'>click here</a><br> 
-  </div>
-</div>
-<?php
 }
 
 function g_aths_add_to_menu() 
 {
-	add_options_page('Announcement ticker highlighter scroller', 'Announcement ticker', 'manage_options', __FILE__, 'g_aths_admin_options' );
-	add_options_page('Announcement ticker highlighter scroller', '', 'manage_options', "announcement-ticker-highlighter-scroller/setting.php",'' );
+	add_options_page('Announcement ticker highlighter scroller', 'Announcement ticker', 'manage_options', 'announcement-ticker-highlighter-scroller', 'g_aths_admin_options' );
 }
-
 
 if (is_admin()) 
 {
