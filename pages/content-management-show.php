@@ -18,7 +18,7 @@ if (isset($_POST['frm_g_aths_display']) && $_POST['frm_g_aths_display'] == 'yes'
 	
 	if ($result != '1')
 	{
-		?><div class="error fade"><p><strong>Oops, selected details doesn't exist (1).</strong></p></div><?php
+		?><div class="error fade"><p><strong><?php _e('Oops, selected details doesnt exist.', 'announcement-ticker'); ?></strong></p></div><?php
 	}
 	else
 	{
@@ -36,7 +36,7 @@ if (isset($_POST['frm_g_aths_display']) && $_POST['frm_g_aths_display'] == 'yes'
 			
 			//	Set success message
 			$g_aths_success_msg = TRUE;
-			$g_aths_success = __('Selected record was successfully deleted.', WP_g_aths_UNIQUE_NAME);
+			$g_aths_success = __('Selected record was successfully deleted.', 'announcement-ticker');
 		}
 	}
 	
@@ -48,7 +48,8 @@ if (isset($_POST['frm_g_aths_display']) && $_POST['frm_g_aths_display'] == 'yes'
 ?>
 <div class="wrap">
   <div id="icon-edit" class="icon32 icon32-posts-post"></div>
-    <h2><?php echo WP_g_aths_TITLE; ?><a class="add-new-h2" href="<?php echo get_option('siteurl'); ?>/wp-admin/options-general.php?page=announcement-ticker-highlighter-scroller&amp;ac=add">Add New</a></h2>
+    <h2><?php _e('Announcement ticker highlighter scroller', 'announcement-ticker'); ?>
+	<a class="add-new-h2" href="<?php echo WP_g_aths_ADMIN_URL; ?>&amp;ac=add"><?php _e('Add New', 'announcement-ticker'); ?></a></h2>
     <div class="tool-box">
 	<?php
 		$pagenum = isset( $_GET['pagenum'] ) ? absint( $_GET['pagenum'] ) : 1;
@@ -63,23 +64,23 @@ if (isset($_POST['frm_g_aths_display']) && $_POST['frm_g_aths_display'] == 'yes'
 		$myData = array();
 		$myData = $wpdb->get_results($sSql, ARRAY_A);
 		?>
-		<script language="JavaScript" src="<?php echo get_option('siteurl'); ?>/wp-content/plugins/announcement-ticker-highlighter-scroller/pages/setting.js"></script>
+		<script language="JavaScript" src="<?php echo WP_g_aths_PLUGIN_URL; ?>/pages/setting.js"></script>
 		<form name="frm_g_aths_display" method="post">
       <table width="100%" class="widefat" id="straymanage">
         <thead>
           <tr>
             <th class="check-column" scope="col"><input type="checkbox" name="g_aths_group_item[]" /></th>
-			<th scope="col">Announcement</th>
-            <th scope="col">Order</th>
-			<th scope="col">Status</th>
+			<th scope="col"><?php _e('Announcement', 'announcement-ticker'); ?></th>
+            <th scope="col"><?php _e('Order', 'announcement-ticker'); ?></th>
+			<th scope="col"><?php _e('Status', 'announcement-ticker'); ?></th>
           </tr>
         </thead>
 		<tfoot>
           <tr>
             <th class="check-column" scope="col"><input type="checkbox" name="g_aths_group_item[]" /></th>
-			<th scope="col">Announcement</th>
-            <th scope="col">Order</th>
-			<th scope="col">Status</th>
+			<th scope="col"><?php _e('Announcement', 'announcement-ticker'); ?></th>
+            <th scope="col"><?php _e('Order', 'announcement-ticker'); ?></th>
+			<th scope="col"><?php _e('Status', 'announcement-ticker'); ?></th>
           </tr>
         </tfoot>
 		<tbody>
@@ -94,8 +95,8 @@ if (isset($_POST['frm_g_aths_display']) && $_POST['frm_g_aths_display'] == 'yes'
 						<td align="left"><input type="checkbox" value="<?php echo $data['g_aths_id']; ?>" name="g_aths_group_item[]"></td>
 						<td><?php echo stripslashes($data['g_aths_text']); ?>
 						<div class="row-actions">
-							<span class="edit"><a title="Edit" href="<?php echo get_option('siteurl'); ?>/wp-admin/options-general.php?page=announcement-ticker-highlighter-scroller&amp;ac=edit&amp;did=<?php echo $data['g_aths_id']; ?>">Edit</a> | </span>
-							<span class="trash"><a onClick="javascript:g_aths_delete('<?php echo $data['g_aths_id']; ?>')" href="javascript:void(0);">Delete</a></span> 
+							<span class="edit"><a title="Edit" href="<?php echo WP_g_aths_ADMIN_URL; ?>&amp;ac=edit&amp;did=<?php echo $data['g_aths_id']; ?>"><?php _e('Edit', 'announcement-ticker'); ?></a> | </span>
+							<span class="trash"><a onClick="javascript:g_aths_delete('<?php echo $data['g_aths_id']; ?>')" href="javascript:void(0);"><?php _e('Delete', 'announcement-ticker'); ?></a></span> 
 						</div>
 						</td>
 						<td><?php echo esc_html(stripslashes($data['g_aths_order'])); ?></td>
@@ -107,7 +108,7 @@ if (isset($_POST['frm_g_aths_display']) && $_POST['frm_g_aths_display'] == 'yes'
 			}
 			else
 			{ 
-				?><tr><td colspan="4" align="center">No records available.</td></tr><?php 
+				?><tr><td colspan="4" align="center"><?php _e('No records available.', 'announcement-ticker'); ?></td></tr><?php 
 			} 
 			?>
 		</tbody>
@@ -129,16 +130,19 @@ if (isset($_POST['frm_g_aths_display']) && $_POST['frm_g_aths_display'] == 'yes'
 		<div class="tablenav bottom">
 			<div class="tablenav-pages"><span class="pagination-links"><?php echo $page_links; ?></span></div>
 			<div class="alignleft actions" style="padding-top:8px;">
-			  <a class="button" href="<?php echo get_option('siteurl'); ?>/wp-admin/options-general.php?page=announcement-ticker-highlighter-scroller&amp;ac=add">Add New</a>
-			  <a class="button" href="<?php echo get_option('siteurl'); ?>/wp-admin/options-general.php?page=announcement-ticker-highlighter-scroller&amp;ac=set">Widget setting</a>
-			  <a class="button" target="_blank" href="<?php echo WP_g_aths_FAV; ?>">Help</a>
+			  <a class="button" href="<?php echo WP_g_aths_ADMIN_URL; ?>&amp;ac=add"><?php _e('Add New', 'announcement-ticker'); ?></a>
+			  <a class="button" href="<?php echo WP_g_aths_ADMIN_URL; ?>&amp;ac=set"><?php _e('Widget Setting', 'announcement-ticker'); ?></a>
+			  <a class="button" target="_blank" href="<?php echo WP_g_aths_FAV; ?>"><?php _e('Help', 'announcement-ticker'); ?></a>
 			</div>		
 		</div>
-		<h3>Plugin configuration option</h3>
+		<h3><?php _e('Plugin configuration option', 'announcement-ticker'); ?></h3>
 		<ol>
-			<li>Add directly in to the theme using PHP code.</li>
-			<li>Drag and drop the widget to your sidebar.</li>
+			<li><?php _e('Add directly in to the theme using PHP code.', 'announcement-ticker'); ?></li>
+			<li><?php _e('Drag and drop the widget to your sidebar.', 'announcement-ticker'); ?></li>
 		</ol>
-	 <p class="description"><?php echo WP_g_aths_LINK; ?></p>
+	 <p class="description">
+		<?php _e('Check official website for more information', 'announcement-ticker'); ?>
+		<a target="_blank" href="<?php echo WP_g_aths_FAV; ?>"><?php _e('click here', 'announcement-ticker'); ?></a>
+	</p>
 	</div>
 </div>

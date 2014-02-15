@@ -5,8 +5,8 @@ Plugin URI: http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highligh
 Author URI: http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/
 Tags: announcement, widget, ticker, highlighter, scroller, message
 Requires at least: 3.4
-Tested up to: 3.6
-Stable tag: 10.1
+Tested up to: 3.8
+Stable tag: 10.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -23,25 +23,20 @@ Check official website for live demo [http://www.gopiplus.com/work/2010/07/18/an
 
 Announcement ticker highlighter scroller wordpress plugin create an announcement scroller in sidebar. It gradually reveals each message into view from bottom to top.
  
-**Feature :**  
+**Plugin feature**  
 
-1. Simple.  
-2. Easy style override system.  
-3. We can add/edit/delete announcement any time.  
-4. Enble/disable option available so no need to delete announcement. 
+*   Simple.  
+*   Easy style override system.  
+*   We can add/edit/delete announcement any time.  
+*   Enble/disable option available so no need to delete announcement. 
+
+Plugin configuration
+
+Drag and drop the widget : Go to widget page under Appearance tab, Drag and drop Announcement ticker highlighter scroller widget into your side bar.
+
+Add directly in the theme : Use this PHP code to add the gallery into your theme files.
 
 <code><?php if (function_exists (g_aths_announcement)) g_aths_announcement(); ?> </code>
-
-**Two way to use.**  
-1. Drag and drop the widget to your sidebar.  
-2. Copy and paste the given code to the desired location. 
-
-Tags: Announcement, side bar, widget,ticker, highlighter, scroller, flash news, message
-
-[Live Demo](http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/)		  
-[About Author](http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/)		  
-[More Info](http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/)  		
-[Comments/Suggestion](http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/)		
  
 == Installation ==
 
@@ -76,90 +71,124 @@ http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller
 
 == Screenshots ==
 
-1. Front end sample
+1. Front Screen. http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/
 
-2. Admin announcement manage page
-
-3. Admin setting page
+2. Admin Screen. http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/
 
 == Upgrade Notice == 
 
-10.1
+= 10.2 =	 
+
+1. Tested up to 3.8
+2. Now this plugin supports localization (or internationalization). i.e. option to translate into other languages. 
+Plugin *.po file (announcement-ticker.po) available in the languages folder.
+
+= 10.1 =
+
 Change in admin layout.
 Added some security feature.
 
-10.0
+= 10.0 =
+
 Tested upto 3.6
 
-9.1
+= 9.1 =
+
 Tested upto 3.5
 
-9.0
+= 9.0 =
+
 New demo link, www.gopiplus.com
 
-8.0
+= 8.0 =
+
 Tested upto 3.4
 
-7.0
+= 7.0 =
+
 Tested upto 3.3
 
-6.0
+= 6.0 =
+
 Security fix, only admin can see the plugin link in the dashboard.
 
-5.0
+= 5.0 =
+
 Tested upto 3.2.1
 
-4.0		
+= 4.0 =
+		
 Tested upto 3.0
 
-3.0 	
+= 3.0 =
+ 	
 New javascript to support both IE and mizila.	
 Now Multilanguage support enabled, so you can add all languages, 
 To post announcement in other language, simply copy and past the other language content in announcement text area.
 
-2.0 	
+= 2.0 =
+ 	
 Changes in JS.
 
-1.0 	
+= 1.0 =
+
 First version.
 
 == Changelog ==
 
-10.1
+= 10.2 =	 
+
+1. Tested up to 3.8
+2. Now this plugin supports localization (or internationalization). i.e. option to translate into other languages. 
+Plugin *.po file (announcement-ticker.po) available in the languages folder.
+
+= 10.1 =
+
 Change in admin layout.
 Added some security feature.
 
-10.0
+= 10.0 =
+
 Tested upto 3.6
 
-9.1
+= 9.1 =
+
 Tested upto 3.5
 
-9.0
+= 9.0 =
+
 New demo link, www.gopiplus.com
 
-8.0
+= 8.0 =
+
 Tested upto 3.4
 
-7.0
+= 7.0 =
+
 Tested upto 3.3
 
-6.0
+= 6.0 =
+
 Security fix, only admin can see the plugin link in the dashboard.
 
-5.0
+= 5.0 =
+
 Tested upto 3.2.1
 
-4.0		
+= 4.0 =
+		
 Tested upto 3.0
 
-3.0 	
+= 3.0 =
+ 	
 New javascript to support both IE and mizila.	
 Now Multilanguage support enabled, so you can add all languages, 
 To post announcement in other language, simply copy and past the other language content in announcement text area.
 
-2.0 	
+= 2.0 =
+ 	
 Changes in JS.
 
-1.0 	
+= 1.0 =
+
 First version.
