@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Announcement ticker highlighter scroller\n"
-"POT-Creation-Date: 2014-02-15 10:23+0800\n"
-"PO-Revision-Date: 2014-02-15 10:23+0800\n"
+"POT-Creation-Date: 2014-04-20 00:11+0800\n"
+"PO-Revision-Date: 2014-04-20 00:11+0800\n"
 "Last-Translator: \n"
 "Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
 "MIME-Version: 1.0\n"
@@ -13,242 +13,243 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../announcement-ticker-highlighter-scroller.php:138
-#: ../announcement-ticker-highlighter-scroller.php:160
-#: ../announcement-ticker-highlighter-scroller.php:171
+#: ../announcement-ticker-highlighter-scroller.php:74
+#: ../pages/content-management-show.php:112
+msgid "No records available."
+msgstr ""
+
+#: ../announcement-ticker-highlighter-scroller.php:144
+#: ../announcement-ticker-highlighter-scroller.php:166
 #: ../announcement-ticker-highlighter-scroller.php:177
-#: ../pages/content-management-add.php:89
-#: ../pages/content-management-edit.php:109
-#: ../pages/content-management-show.php:51 ../pages/widget-setting.php:5
+#: ../announcement-ticker-highlighter-scroller.php:183
+#: ../pages/content-management-add.php:90
+#: ../pages/content-management-edit.php:110
+#: ../pages/content-management-show.php:52 ../pages/widget-setting.php:6
 msgid "Announcement ticker highlighter scroller"
 msgstr ""
 
-#: ../announcement-ticker-highlighter-scroller.php:139
+#: ../announcement-ticker-highlighter-scroller.php:145
 msgid "Announcement ticker"
 msgstr ""
 
-#: ../announcement-ticker-highlighter-scroller.php:162
-#: ../pages/content-management-add.php:120
-#: ../pages/content-management-edit.php:140
-#: ../pages/content-management-show.php:144 ../pages/widget-setting.php:89
-msgid "Check official website for more information"
-msgstr ""
-
-#: ../announcement-ticker-highlighter-scroller.php:163
+#: ../announcement-ticker-highlighter-scroller.php:168
 #: ../pages/content-management-add.php:121
 #: ../pages/content-management-edit.php:141
 #: ../pages/content-management-show.php:145 ../pages/widget-setting.php:90
+msgid "Check official website for more information"
+msgstr ""
+
+#: ../announcement-ticker-highlighter-scroller.php:169
+#: ../pages/content-management-add.php:122
+#: ../pages/content-management-edit.php:142
+#: ../pages/content-management-show.php:146 ../pages/widget-setting.php:91
 msgid "click here"
 msgstr ""
 
-#: ../pages/content-management-add.php:25
-#: ../pages/content-management-edit.php:51
+#: ../pages/content-management-add.php:26
+#: ../pages/content-management-edit.php:52
 msgid "Please enter the announcement."
 msgstr ""
 
-#: ../pages/content-management-add.php:32
-#: ../pages/content-management-edit.php:58
+#: ../pages/content-management-add.php:33
+#: ../pages/content-management-edit.php:59
 msgid "Please select the display status."
 msgstr ""
 
-#: ../pages/content-management-add.php:39
-#: ../pages/content-management-edit.php:65
+#: ../pages/content-management-add.php:40
+#: ../pages/content-management-edit.php:66
 msgid "Please enter the display order, only number."
 msgstr ""
 
-#: ../pages/content-management-add.php:54
+#: ../pages/content-management-add.php:55
 msgid "New details was successfully added."
 msgstr ""
 
-#: ../pages/content-management-add.php:80
-#: ../pages/content-management-edit.php:100
+#: ../pages/content-management-add.php:81
+#: ../pages/content-management-edit.php:101
 msgid "Click here to view the details"
 msgstr ""
 
-#: ../pages/content-management-add.php:91
+#: ../pages/content-management-add.php:92
 msgid "Add new details"
 msgstr ""
 
-#: ../pages/content-management-add.php:93
-#: ../pages/content-management-edit.php:113
-#: ../pages/content-management-show.php:73
-#: ../pages/content-management-show.php:81
+#: ../pages/content-management-add.php:94
+#: ../pages/content-management-edit.php:114
+#: ../pages/content-management-show.php:74
+#: ../pages/content-management-show.php:82
 msgid "Announcement"
 msgstr ""
 
-#: ../pages/content-management-add.php:95
-#: ../pages/content-management-edit.php:115
+#: ../pages/content-management-add.php:96
+#: ../pages/content-management-edit.php:116
 msgid "Please enter your announcement text."
 msgstr ""
 
-#: ../pages/content-management-add.php:97
-#: ../pages/content-management-edit.php:117
+#: ../pages/content-management-add.php:98
+#: ../pages/content-management-edit.php:118
 msgid "Display status"
 msgstr ""
 
-#: ../pages/content-management-add.php:103
-#: ../pages/content-management-edit.php:123
+#: ../pages/content-management-add.php:104
+#: ../pages/content-management-edit.php:124
 msgid "Do you want to show this announcement?"
 msgstr ""
 
-#: ../pages/content-management-add.php:105
-#: ../pages/content-management-edit.php:125
+#: ../pages/content-management-add.php:106
+#: ../pages/content-management-edit.php:126
 msgid "Display order"
 msgstr ""
 
-#: ../pages/content-management-add.php:107
-#: ../pages/content-management-edit.php:127
+#: ../pages/content-management-add.php:108
+#: ../pages/content-management-edit.php:128
 msgid "Please enter your display order."
-msgstr ""
-
-#: ../pages/content-management-add.php:112
-#: ../pages/content-management-edit.php:132 ../pages/widget-setting.php:80
-msgid "Submit"
 msgstr ""
 
 #: ../pages/content-management-add.php:113
 #: ../pages/content-management-edit.php:133 ../pages/widget-setting.php:81
-msgid "Cancel"
+msgid "Submit"
 msgstr ""
 
 #: ../pages/content-management-add.php:114
-#: ../pages/content-management-edit.php:134
-#: ../pages/content-management-show.php:135 ../pages/widget-setting.php:82
+#: ../pages/content-management-edit.php:134 ../pages/widget-setting.php:82
+msgid "Cancel"
+msgstr ""
+
+#: ../pages/content-management-add.php:115
+#: ../pages/content-management-edit.php:135
+#: ../pages/content-management-show.php:136 ../pages/widget-setting.php:83
 msgid "Help"
 msgstr ""
 
-#: ../pages/content-management-edit.php:16
-#: ../pages/content-management-show.php:21
+#: ../pages/content-management-edit.php:17
+#: ../pages/content-management-show.php:22
 msgid "Oops, selected details doesnt exist."
 msgstr ""
 
-#: ../pages/content-management-edit.php:83
+#: ../pages/content-management-edit.php:84
 msgid "Details was successfully updated."
 msgstr ""
 
-#: ../pages/content-management-edit.php:111
+#: ../pages/content-management-edit.php:112
 msgid "Update details"
 msgstr ""
 
-#: ../pages/content-management-show.php:39
+#: ../pages/content-management-show.php:40
 msgid "Selected record was successfully deleted."
 msgstr ""
 
-#: ../pages/content-management-show.php:52
-#: ../pages/content-management-show.php:133
+#: ../pages/content-management-show.php:53
+#: ../pages/content-management-show.php:134
 msgid "Add New"
-msgstr ""
-
-#: ../pages/content-management-show.php:74
-#: ../pages/content-management-show.php:82
-msgid "Order"
 msgstr ""
 
 #: ../pages/content-management-show.php:75
 #: ../pages/content-management-show.php:83
+msgid "Order"
+msgstr ""
+
+#: ../pages/content-management-show.php:76
+#: ../pages/content-management-show.php:84
 msgid "Status"
 msgstr ""
 
-#: ../pages/content-management-show.php:98
+#: ../pages/content-management-show.php:99
 msgid "Edit"
 msgstr ""
 
-#: ../pages/content-management-show.php:99
+#: ../pages/content-management-show.php:100
 msgid "Delete"
 msgstr ""
 
-#: ../pages/content-management-show.php:111
-msgid "No records available."
-msgstr ""
-
-#: ../pages/content-management-show.php:122
+#: ../pages/content-management-show.php:123
 msgid " &lt;&lt; "
 msgstr ""
 
-#: ../pages/content-management-show.php:123
+#: ../pages/content-management-show.php:124
 msgid " &gt;&gt; "
 msgstr ""
 
-#: ../pages/content-management-show.php:134 ../pages/widget-setting.php:6
+#: ../pages/content-management-show.php:135 ../pages/widget-setting.php:7
 msgid "Widget Setting"
 msgstr ""
 
-#: ../pages/content-management-show.php:138
+#: ../pages/content-management-show.php:139
 msgid "Plugin configuration option"
 msgstr ""
 
-#: ../pages/content-management-show.php:140
+#: ../pages/content-management-show.php:141
 msgid "Add directly in to the theme using PHP code."
 msgstr ""
 
-#: ../pages/content-management-show.php:141
+#: ../pages/content-management-show.php:142
 msgid "Drag and drop the widget to your sidebar."
 msgstr ""
 
-#: ../pages/widget-setting.php:39
+#: ../pages/widget-setting.php:40
 msgid "Details successfully updated."
 msgstr ""
 
-#: ../pages/widget-setting.php:47
+#: ../pages/widget-setting.php:48
 msgid "Enter widget title"
 msgstr ""
 
-#: ../pages/widget-setting.php:49
+#: ../pages/widget-setting.php:50
 msgid "Please enter your widget title."
 msgstr ""
 
-#: ../pages/widget-setting.php:51
+#: ../pages/widget-setting.php:52
 msgid "Width"
 msgstr ""
 
-#: ../pages/widget-setting.php:53
+#: ../pages/widget-setting.php:54
 msgid "Please enter your announcement box width."
 msgstr ""
 
-#: ../pages/widget-setting.php:55
+#: ../pages/widget-setting.php:56
 msgid "Height"
 msgstr ""
 
-#: ../pages/widget-setting.php:57
+#: ../pages/widget-setting.php:58
 msgid "Please enter your announcement box height."
 msgstr ""
 
-#: ../pages/widget-setting.php:59
+#: ../pages/widget-setting.php:60
 msgid "Delay"
 msgstr ""
 
-#: ../pages/widget-setting.php:61
+#: ../pages/widget-setting.php:62
 msgid "Please enter your ticker box delay."
 msgstr ""
 
-#: ../pages/widget-setting.php:63
+#: ../pages/widget-setting.php:64
 msgid "Speed"
 msgstr ""
 
-#: ../pages/widget-setting.php:65
+#: ../pages/widget-setting.php:66
 msgid "Please enter your ticker box speed."
 msgstr ""
 
-#: ../pages/widget-setting.php:67
+#: ../pages/widget-setting.php:68
 msgid "Highlight color"
 msgstr ""
 
-#: ../pages/widget-setting.php:69
+#: ../pages/widget-setting.php:70
 msgid "Please enter your ticker box highlight color."
 msgstr ""
 
-#: ../pages/widget-setting.php:71
+#: ../pages/widget-setting.php:72
 msgid "Text color"
 msgstr ""
 
-#: ../pages/widget-setting.php:73
+#: ../pages/widget-setting.php:74
 msgid "Please enter your ticker box text color."
 msgstr ""
 
-#: ../pages/widget-setting.php:75
+#: ../pages/widget-setting.php:76
 msgid "Style"
 msgstr ""
 
-#: ../pages/widget-setting.php:77
+#: ../pages/widget-setting.php:78
 msgid "Please enter your ticker box css."
 msgstr ""
