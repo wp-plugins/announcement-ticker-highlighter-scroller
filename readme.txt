@@ -38,6 +38,11 @@ Add directly in the theme : Use this PHP code to add the gallery into your theme
 
 <code><?php if (function_exists (g_aths_announcement)) g_aths_announcement(); ?> </code>
  
+= Translators =
+
+* Ukranian (uk_UA) - [Michael Yunat](http://getvoip.com)
+* Tamil (ta) - [Gopi Ramasamy](http://www.gopiplus.com/)
+
 == Installation ==
 
 1. Unpack the *.zip file and extract the /announcement-ticker-highlighter-scroller/ folder..
