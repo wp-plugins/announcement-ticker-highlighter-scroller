@@ -5,12 +5,12 @@ Plugin URI: http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highligh
 Author URI: http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/
 Tags: announcement, widget, ticker, highlighter, scroller, message
 Requires at least: 3.4
-Tested up to: 3.9
-Stable tag: 10.3
+Tested up to: 4.0
+Stable tag: 10.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
-This plug-in will display the announcement with highlighter scroller. It gradually reveals each message into view from bottom to top.
+This plugin will display the announcement with highlighter scroller. It gradually reveals each message into view from bottom to top.
 
 == Description ==
 
@@ -36,7 +36,7 @@ Drag and drop the widget : Go to widget page under Appearance tab, Drag and drop
 
 Add directly in the theme : Use this PHP code to add the gallery into your theme files.
 
-<code><?php if (function_exists (g_aths_announcement)) g_aths_announcement(); ?> </code>
+`<?php if (function_exists (g_aths_announcement)) g_aths_announcement(); ?>`
  
 = Translators =
 
@@ -81,6 +81,10 @@ http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller
 2. Admin Screen. http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/
 
 == Upgrade Notice == 
+
+= 10.4 =	 
+
+1. Tested up to 4.0
 
 = 10.3 =	 
 
@@ -145,6 +149,10 @@ Changes in JS.
 First version.
 
 == Changelog ==
+
+= 10.4 =	 
+
+1. Tested up to 4.0
 
 = 10.3 =	 
 
