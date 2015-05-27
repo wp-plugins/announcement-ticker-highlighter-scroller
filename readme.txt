@@ -5,8 +5,8 @@ Plugin URI: http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highligh
 Author URI: http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller/
 Tags: announcement, widget, ticker, highlighter, scroller, message
 Requires at least: 3.4
-Tested up to: 4.1
-Stable tag: 10.5
+Tested up to: 4.2.2
+Stable tag: 10.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -82,6 +82,10 @@ http://www.gopiplus.com/work/2010/07/18/announcement-ticker-highlighter-scroller
 
 == Upgrade Notice == 
 
+= 10.6 =	 
+
+1. Tested up to 4.2.2
+
 = 10.5 =	 
 
 1. Tested up to 4.1
@@ -153,6 +157,10 @@ Changes in JS.
 First version.
 
 == Changelog ==
+
+= 10.6 =	 
+
+1. Tested up to 4.2.2
 
 = 10.5 =	 
 
